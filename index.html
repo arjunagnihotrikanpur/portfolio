@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Arjun Agnihotri</title>
+
+    <!-- Font aweomse -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="home">
+        <div class="item item1">
+            <div class="nav">
+                <h2><a href="#home">Home</a></h2>
+                <h2><a href="#projects">Projects</a></h2>
+                <h2><a href="#skillstarget">Skills</a></h2>
+                <h2><a href="#">Contact</a></h2>
+            </div>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/arjunagni/" target="_blank"><h3 class="icon"><i class="fa-brands fa-linkedin"></i></h3></a>
+                <h3 onClick="copy()" class="icon"><i class="fa-solid fa-envelope"></i></h3>
+                <h6 id="fillhere" onclick="copy()" class="icon">Click to copy email!</h6>
+            </div>
+        </div>
+        <div class="item item2">
+            <div class="text">
+                <div class="titleText"><h1 class="i">i</h1></div>
+                <div class="titleText"><h1 class="am">am</h1></div>
+                <div class="titleText"><h1 class="arjun">arjun</h1></div>
+            </div>
+            <div class="text2"><h1>FULL STACK DEVELOPER</h1></div>
+            <div class="button"><h2><a href="#projects">Know More</a></h2></div>
+        </div>
+    </div>
+    
+    <!-- Projects Section -->
+    <div class="container2" id="projects">
+        
+        
+        <h3 class="projectText">&lt;projects&gt;</h3>
+        <div class="mainbox">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+        </div>
+        <h3 class="morebelowText"><a href="#skillstarget">&lt;more below&gt;</a></h3>
+        
+        <hr id="skillstarget">
+    </div>
+    
+    
+    
+    <!-- Skills Section -->
+    <div class="skillsSectionContainer">
+        <div class="skills-title"><h1>Skills</h1></div>
+        
+        <div class="skitem1">
+            <div class="col1">
+                <h3>HTML</h3>
+                <h3>CSS</h3>
+                <h3>JAVASCRIPT</h3>
+                <h3>BOOTSTRAP</h3>
+                <h3>NODE JS</h3>
+                <h3>EXPRESS JS</h3>
+                <h3>GIT</h3>
+    
+            </div>
+        </div>
+        <div class="container3" id="projects">
+        
+            <div class="progressbox">
+                
+                <div class="col2">
+                    <progress id="html" value="95" max="100"></progress>
+                    <progress id="html" value="80" max="100"></progress>
+                    <progress id="html" value="95" max="100"></progress>
+                    <progress id="html" value="60" max="100"></progress>
+                    <progress id="html" value="80" max="100"></progress>
+                    <progress id="html" value="80" max="100"></progress>
+                    <progress id="html" value="85" max="100"></progress>
+        
+                </div>
+        
+            </div>
+    
+        </div>
+    </div>
+
+<hr>
+     <!-- Contact Section -->
+     <div class="contactSectionContainer">
+        <div><h3>LinkedIn : <a target="_blank" href="https://www.linkedin.com/in/arjunagni/">Click Here</a></h3></div>
+        <div><h3>Email : <a id="fillHere2" target="_blank" onclick="copyFooter()">Click Here to copy email!</a></h3></div>
+
+        <div class="uparrow">
+            <a href="#home">
+                <i style="padding-right: 30px" class="fa-sharp fa-solid fa-arrow-up"></i>Scrolll Up!
+            </a>
+        </div>
+        <p style="text-align: center">Copyright 2022</p>
+    </div>
+
+
+
+    <script>
+        let copy = () => {
+            
+            // Copy the text inside the text field
+            navigator.clipboard.writeText("arjunagnihotrikanpur@gmail.com");
+            document.getElementById('fillhere').innerText = 'Copied To Clipboard!'
+            setTimeout(() => {
+                document.getElementById('fillhere').innerText = 'Click to Copy!'
+            }, 500);
+        }
+
+        let copyFooter = () => {
+            
+            // Copy the text inside the text field
+            navigator.clipboard.writeText("arjunagnihotrikanpur@gmail.com");
+            document.getElementById('fillHere2').innerText = 'Copied To Clipboard!'
+            setTimeout(() => {
+                document.getElementById('fillHere2').innerText = 'Click to Copy!'
+            }, 500);
+        }
+
+    </script>
+</body>
+</html>

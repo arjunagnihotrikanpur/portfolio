@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+
+    <style>
+        progress {
+            /* margin-left: 100px; */
+            width: 1000px;
+            margin-top: 20px;
+        }
+        progress {
+            background-color: red;
+            color: red;
+        }
+        progress::-webkit-progress-value {
+            background: red;
+        }
+        .progressbox {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="progressbox">
+        <div class="col1">
+            <h3>HTML</h3>
+            <h3>CSS</h3>
+            <h3>JAVASCRIPT</h3>
+            <h3>BOOTSTRAP</h3>
+            <h3>NODE JS</h3>
+            <h3>EXPRESS JS</h3>
+            <h3>GIT</h3>
+
+        </div>
+        <div class="col2">
+            <progress id="html" value="95" max="100"></progress>
+            <progress id="html" value="80" max="100"></progress>
+            <progress id="html" value="95" max="100"></progress>
+            <progress id="html" value="60" max="100"></progress>
+            <progress id="html" value="80" max="100"></progress>
+            <progress id="html" value="80" max="100"></progress>
+            <progress id="html" value="85" max="100"></progress>
+
+        </div>
+
+    </div>
+        
+
+        
+
+</body>
+</html>
